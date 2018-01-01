@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StylizedTitleView</string>
+    <string name="title">Title</string>
+    <string name="Value">Value</string>
+</resources>
