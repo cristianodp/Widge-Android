@@ -1,9 +1,13 @@
 # Widge-Android
+
 [![](https://jitpack.io/v/cristianodp/Widge-Android.svg)](https://jitpack.io/#cristianodp/Widge-Android)
-###Widge for Android
+
+### Widge for Android
 - SimpleItemView
 
-####How to Install
+![](https://raw.githubusercontent.com/cristianodp/Widge-Android/master/images/SimpleItemView.PNG)
+
+#### How to Install
 ----
 To get a Git project into your build:
 
@@ -23,7 +27,7 @@ Step 2. Add the dependency in our gradle file
 compile 'com.github.cristianodp:Widge-Android:0.1.0'
 ```
 
-####How to Use
+#### How to Use
 ----
 In or xml layout add the simpleItemView as the code bellow
 ```xml
