@@ -1,52 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.cristianodp.widgetexemple.SimpleItemViewActivity">
+    tools:context="br.com.cristianodp.widgetexemple.SimpleItemViewActivity"
+    android:orientation="horizontal">
+
 
     <br.com.cristianodp.widge.SimpleItemView
         android:id="@+id/Incomes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorBackgroud"
+        app:textSize="10sp"
+        app:textColor="@color/colorFont"
         app:icon="@drawable/ic_receive"
         app:label="Incomes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:value="$ 200.00" />
+        app:style="style1"
+        app:value="$ 200.00"
+        tools:ignore="SmallSp" />
 
-    <br.com.cristianodp.widge.SimpleItemView
-        android:id="@+id/Expence"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:icon="@drawable/ic_pay"
-        app:label="Expenses"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Incomes"
-        app:value="$ 120.00" />
 
-    <br.com.cristianodp.widge.SimpleItemView
-        android:id="@+id/Banlance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:icon="@drawable/ic_wallet"
-        app:label="Balance"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Expence"
-        app:value="$ 80.00" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
