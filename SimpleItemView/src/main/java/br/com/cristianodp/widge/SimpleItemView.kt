@@ -3,6 +3,8 @@ package br.com.cristianodp.widge
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.content.Context
+import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
 import android.os.Build
 import android.support.constraint.ConstraintLayout
 import android.util.AttributeSet
@@ -32,11 +34,9 @@ class SimpleItemView : LinearLayout {
         init(attrs)
     }
 
-
     /**
      * Initialize view
      */
-    @SuppressLint("Recycle")
     private fun init(attrs: AttributeSet?) {
 
         val customAttrs = context.obtainStyledAttributes(
@@ -55,7 +55,7 @@ class SimpleItemView : LinearLayout {
         val backgroundColor = customAttrs.getColor(R.styleable.SimpleItemView_backgroundColor,0)
         val style = customAttrs.getInt(R.styleable.SimpleItemView_style,0)
 
-        var view_layout = R.layout.simple_item_view_layout
+        var view_layout:Int// = R.layout.simple_item_view_layout
         when (style) {
             0 -> view_layout = R.layout.simple_item_view_layout
             1 -> view_layout = R.layout.simple_item_center_view_layout
@@ -110,8 +110,61 @@ class SimpleItemView : LinearLayout {
         }
 
 
-
     }
+
+    fun setValue(text: String){
+        mValue.text = text
+    }
+
+    fun getValue():String{
+        return mValue.text.toString()
+    }
+
+    fun setIcon(icon: Drawable){
+        mIcon.setImageDrawable(icon)
+    }
+
+    fun setLabel(text: String){
+        mLabel.text = text
+    }
+
+    fun getLabel():String{
+        return mLabel.text.toString()
+    }
+
+    fun setTextSize(size: Float){
+        mValue.textSize = size
+        mLabel.textSize = size
+    }
+
+    fun setTextSizeLabel(size: Float){
+        mLabel.textSize = size
+    }
+
+    fun setTextSizeValue(size: Float){
+        mValue.textSize = size
+    }
+
+    fun setTextColor(color: Int){
+        mValue.setTextColor(color)
+        mLabel.setTextColor(color)
+    }
+
+    fun setTextColorLabel(color: Int){
+        mLabel.setTextColor(color)
+    }
+
+    fun setTextColorValue(color: Int){
+        mValue.setTextColor(color)
+    }
+
+    /*
+    fun setStyle(color: Int){
+        mValue.setTextColor(color)
+    }
+    */
+
+
 
 
 }
