@@ -12,13 +12,13 @@
         android:id="@+id/Incomes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
         android:background="@color/colorBackgroud"
-        app:textSize="10sp"
-        app:textColor="@color/colorFont"
+        android:textColor="@color/colorAccent"
+        app:appearance="inPiled"
         app:icon="@drawable/ic_receive"
         app:label="Incomes"
-        app:style="style1"
+        app:textColor="@color/colorFont"
+        app:textSize="10sp"
         app:value="$ 200.00"
         tools:ignore="SmallSp" />
 

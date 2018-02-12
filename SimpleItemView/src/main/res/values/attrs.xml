@@ -11,9 +11,9 @@
         <attr name="textColorLabel" format="color" />
         <attr name="textSizeLabel" format="dimension"/>
         <attr name="backgroundColor"  format="color"/>
-        <attr name="style" format="enum">
-            <enum name="style1" value="0"/>
-            <enum name="style2" value="1"/>
+        <attr name="appearance" format="enum">
+            <enum name="inLine" value="0"/>
+            <enum name="inPiled" value="1"/>
         </attr>
 
     </declare-styleable>
