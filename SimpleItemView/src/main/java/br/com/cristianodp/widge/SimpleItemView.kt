@@ -197,7 +197,7 @@ class SimpleItemView : LinearLayout {
         constraintSet.constrainDefaultWidth(R.id.TextViewValue,wrap_content)
         constraintSet.constrainDefaultHeight(R.id.TextViewValue,wrap_content)
        // constraintSet.setHorizontalBias(R.id.TextViewValue,0f)
-        mValue.textSize = 24f
+       // mValue.textSize = 24f
 
 
         constraintSet.applyTo(mConstraintLayoutContainer)
